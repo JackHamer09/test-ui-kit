@@ -71,7 +71,7 @@ export default defineComponent({
     @apply border border-transparent;
 
     &.primary {
-      @apply bg-primary-600 hover:bg-primary-700 disabled:hover:bg-primary-600;
+      @apply bg-primary-300 hover:bg-primary-700 disabled:hover:bg-primary-600;
     }
 
     &.secondary {
