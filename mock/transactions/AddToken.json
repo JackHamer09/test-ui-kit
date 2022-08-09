@@ -1,0 +1,18 @@
+{
+    "transactionHash": "0x011b4d03dd8c01f1049143cf9c4c817e4b167f1d1b83e5c6f0f10d89ba1e7bce",
+    "data": {
+        "type": "addToken",
+        "address": "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee",
+        "name": [69, 84, 72],
+        "symbol": [69, 84, 72],
+        "decimals": 18
+    },
+    "status": "verified",
+    "fee": "0x59682f07",
+    "feeToken": "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee",
+    "nonce": 123,
+    "blockNumber": 1,
+    "initiatorAddress": "0x52312ad6f01657413b2eae9287f6b9adad93d5fe",
+    "receivedAt": "2022-04-08T13:36:59.719596Z",
+    "ethExecuteTxHash": null
+}

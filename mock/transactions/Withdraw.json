@@ -1,0 +1,17 @@
+{
+    "transactionHash": "0xd15de3f3f7f5fa794ecdcbab6ead6a86c10feb3ed938fa46941a111c1081eb68",
+    "data": {
+        "type": "withdraw",
+        "to": "0xc89c5cac05bf4123a3985663e6533d6719892cb4",
+        "token": "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee",
+        "amount": "0x10576"
+    },
+    "status": "verified",
+    "fee": "0xf5de814000",
+    "feeToken": "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee",
+    "nonce": 1,
+    "blockNumber": 27,
+    "initiatorAddress": "0xc89c5cac05bf4123a3985663e6533d6719892cb4",
+    "receivedAt": "2022-04-11T09:43:29.091961Z",
+    "ethExecuteTxHash": "0x40508c6b624f6df3555254dddbd629a9625c96dc77c9900f55493cc40d9b537f"
+}

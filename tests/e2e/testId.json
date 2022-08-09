@@ -1,0 +1,18 @@
+{
+  "blocksNumber": "blocks-number",
+  "blocksTable": "blocks-table",
+  "byteCodeDropDown": "bytecode-dropdown",
+  "contractsAddress": "contracts-address",
+  "contractVerificationButton": "contract-verification-button",
+  "initiatorsAddress": "initiators-address",
+  "optimizationRadioButtons": "radio-buttons",
+  "pageTitle": "page-title",
+  "previousInstructionButton": "previous-instruction-navigation-button",
+  "nextInstructionButton": "next-instruction-navigation-button",
+  "traceSearchInput": "trace-search-input",
+  "tokensIcon": "tokens-icon",
+  "transactionsHash": "transactions-hash",
+  "transactionsTable": "transactions-table",
+  "latestTransactionsTable": "latest-transaction-table",
+  "latestBlockTable": "latest-block-table"
+}

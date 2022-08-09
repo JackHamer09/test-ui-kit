@@ -1,0 +1,18 @@
+{
+    "transactionHash": "0x3f4efaf51cd915ee9f21d9f383cd44234d8cc20b70dbe44d9cc1b9e9c51b5cd2",
+    "data": {
+        "type": "deposit",
+        "token": "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee",
+        "amount": "0x38d7ea4c68000",
+        "to": "0xe20c80f0f79dfcb9a640d123eb9aff5fd2d1f00f",
+        "to_porter_authorized": false
+    },
+    "status": "verified",
+    "fee": "0x0",
+    "feeToken": "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee",
+    "nonce": 1,
+    "blockNumber": 17,
+    "initiatorAddress": "0xe20c80f0f79dfcb9a640d123eb9aff5fd2d1f00f",
+    "receivedAt": "2022-04-11T09:07:29.359270Z",
+    "ethExecuteTxHash": "0x0bfc2c030ecb56db3c3db5e84809d057bdc91924189c8c98d853ebe183758a52"
+}

@@ -1,0 +1,34 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;600&display=swap");
+
+@layer base {
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+    margin: 0;
+    position: relative;
+    font-weight: normal;
+  }
+
+  h1 {
+    @apply text-4xl font-bold text-neutral-50;
+  }
+  h2 {
+    @apply text-3xl font-bold text-neutral-50;
+  }
+  h3 {
+    @apply text-2xl font-bold text-neutral-50;
+  }
+
+  body {
+    @apply min-h-screen bg-neutral-50 font-sans text-base text-neutral-700;
+  }
+
+  #app {
+    @apply grid h-full min-h-screen w-full grid-cols-1 grid-rows-[max-content_1fr_max-content];
+  }
+}
