@@ -55,7 +55,7 @@ export default defineComponent({
 
 <style lang="scss" scoped>
 .button {
-  @apply flex items-center justify-center rounded-md px-4 py-3 text-lg font-light leading-none shadow-sm;
+  @apply flex items-center justify-center rounded-md px-4 py-3 text-lg font-light leading-3 shadow-sm;
   @apply focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2;
   @apply appearance-none disabled:cursor-not-allowed disabled:opacity-50;
 
