@@ -1,9 +1,22 @@
 {
-  "name": "test-ui-kit",
-  "version": "0.0.0-development",
+  "name": "jack-ml-test-ui-kit",
+  "version": "0.0.3",
+  "exports": {
+    ".": "./dist/index.js",
+    "./styles.css": "./dist/style.css"
+  },
+  "browser": {
+    "./styles.css":  "./dist/style.css"
+  },
+  "types": "./dist/ViewerPlugin.d.ts",
+  "license": "Apache-2.0",
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "dev": "vite",
-    "build": "vue-tsc --noEmit && vite build",
+    "build": "vue-tsc --noEmit && vite build && npm run build-types",
+    "build-types": "vue-tsc ./src/ViewerPlugin.ts --declaration --emitDeclarationOnly --esModuleInterop --skipLibCheck --outDir dist",
     "preview": "vite preview --port 5050",
     "test:unit": "vitest --environment jsdom",
     "test:unit:ci": "TZ=UTC-3 vitest --environment jsdom --run",
@@ -86,6 +99,7 @@
     "postcss": "^8.4.12",
     "prettier": "^2.5.1",
     "prettier-plugin-tailwindcss": "^0.1.8",
+    "rollup-plugin-typescript2": "^0.32.1",
     "sass": "^1.49.9",
     "start-server-and-test": "^1.14.0",
     "storybook-addon-designs": "^6.3.1",

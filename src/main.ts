@@ -2,6 +2,7 @@ import { createApp } from "vue";
 import { createI18n } from "vue-i18n";
 
 import App from "./App.vue";
+import ViewerPlugin from "./ViewerPlugin";
 import enUS from "./locales/en.json";
 import testId from "./plugins/testId";
 
@@ -22,5 +23,6 @@ const i18n = createI18n<[MessageSchema], "en">({
 
 app.use(i18n);
 app.use(testId);
+app.use(ViewerPlugin);
 
 app.mount("#app");
