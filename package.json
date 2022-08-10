@@ -29,8 +29,7 @@
     "storybook-docs": "start-storybook -s ./public -p 6006 --docs",
     "build-storybook": "build-storybook -s ./public",
     "chromatic": "chromatic --exit-zero-on-changes",
-    "create-labels": "auto create-labels",
-    "changelog": "auto changelog",
+    "release": "auto shipit --base-branch=main",
     "postinstall": "rm -rf ./node_modules/@types/react"
   },
   "prettier": "@matterlabs/prettier-config",
