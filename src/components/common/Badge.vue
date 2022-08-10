@@ -47,7 +47,7 @@ defineProps({
   }
 
   &.color-primary {
-    @apply bg-primary-200 text-primary-600;
+    @apply bg-primary-50 text-primary-600;
     .badge-dot {
       @apply bg-primary-600;
     }
