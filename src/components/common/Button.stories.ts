@@ -1,9 +1,22 @@
+import type { Meta } from "@storybook/vue3";
+
 import Button from "./Button.vue";
 
 export default {
   title: "Common/Button",
   component: Button,
-};
+  argTypes: {
+    color: {
+      options: ["primary", "secondary"],
+    },
+    size: {
+      options: ["md", "lg"],
+    },
+  },
+  parameters: {
+    componentSubtitle: "A button component",
+  },
+} as Meta;
 
 type Args = {
   color: "primary" | "secondary";
@@ -29,6 +42,7 @@ PrimaryLoading.args = {
   variant: "contained",
   loading: true,
 };
+
 export const PrimaryDisabled = Template.bind({}) as unknown as { args: Args };
 PrimaryDisabled.args = {
   color: "primary",

@@ -2,6 +2,7 @@
   <div class="alert-container" :class="type">
     <img :src="iconURL" :alt="`${type} Icon`" class="icon" aria-hidden="true" />
     <div class="alert-body ml-3">
+      <!-- @slot Default slot to show content inside the alert -->
       <slot />
     </div>
   </div>
@@ -12,6 +13,9 @@ import { computed } from "vue";
 import type { PropType } from "vue";
 
 const props = defineProps({
+  /**
+   * This is jsdoc description
+   */
   type: {
     type: String as PropType<"warning" | "error">,
     default: "warning",
@@ -21,6 +25,16 @@ const props = defineProps({
 const iconURL = computed(() => {
   return `/icons/${props.type}.svg`;
 });
+
+defineEmits<{
+  /**
+   * Solves equations of the form a * x = b
+   * @returns {Number} Returns the value of x for the equation.
+   * @type {Number, String}
+   * @values string, asd
+   */
+  (eventName: "update:modelValue", value: string | number | null): void;
+}>();
 </script>
 
 <style lang="scss" scoped>

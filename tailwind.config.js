@@ -23,7 +23,7 @@ module.exports = {
           800: "#27274E",
           900: "#11142B",
         },
-        secondary: colors.yellow,
+        secondary: colors.orange,
         neutral: colors.gray,
 
         success: colors.green,

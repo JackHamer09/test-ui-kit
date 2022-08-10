@@ -14,6 +14,7 @@
         d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"
       ></path>
     </svg>
+    <!-- @slot Default slot to show content inside the button -->
     <slot />
   </component>
 </template>
@@ -22,6 +23,9 @@
 import { defineComponent } from "vue";
 import type { PropType } from "vue";
 
+/**
+ * This is an amazing button component
+ */
 export default defineComponent({
   inheritAttrs: false,
   props: {
@@ -37,6 +41,9 @@ export default defineComponent({
       type: String as PropType<"md" | "lg">,
       default: "md",
     },
+    /**
+     * This is variant description
+     */
     variant: {
       type: String as PropType<"contained" | "outlined">,
       default: "contained",
@@ -45,6 +52,9 @@ export default defineComponent({
       type: String,
       default: "button",
     },
+    /**
+     * This is jsdoc description
+     */
     loading: {
       type: Boolean,
       default: false,

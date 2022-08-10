@@ -2,6 +2,7 @@
   <div class="badge-container" :class="[`color-${color}`, `size-${size}`]">
     <div v-if="dot" class="badge-dot"></div>
     <span class="badge-content">
+      <!-- @slot Default slot to show content inside the badge -->
       <slot></slot>
     </span>
   </div>
@@ -20,7 +21,7 @@ defineProps({
     default: false,
   },
   color: {
-    type: String as PropType<"primary" | "secondary" | "neutral" | "success" | "warning" | "error">,
+    type: String as PropType<"neutral" | "primary" | "secondary" | "success" | "warning" | "error">,
     default: "neutral",
   },
 });
@@ -28,7 +29,7 @@ defineProps({
 
 <style lang="scss" scoped>
 .badge-container {
-  @apply flex w-max items-center rounded font-bold capitalize;
+  @apply flex w-max items-center rounded font-bold;
 
   &.size-sm {
     @apply py-1 px-2 pr-2.5 text-xs;
