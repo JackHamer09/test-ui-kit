@@ -1,4 +1,4 @@
-name: 'Lint, unit test, Chromatic release'
+name: 'Lint, test, Chromatic release'
 
 on: push
 
@@ -14,7 +14,7 @@ jobs:
       - name: Lint
         run: npm run lint -- --no-fix --max-warnings 0
 
-      - name: Unit testing
+      - name: Test
         run: npm run test:unit:ci
 
       - name: Publish to Chromatic
