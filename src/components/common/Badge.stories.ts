@@ -125,5 +125,5 @@ Default.args = [
       size: "sm",
       dot: false,
     },
-  ]
+  ],
 ];
