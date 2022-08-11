@@ -8,6 +8,19 @@ module.exports = {
   "addons": [
     "@storybook/addon-links",
     "@storybook/addon-essentials",
+    {
+      name: '@storybook/addon-storysource',
+      options: {
+        rule: {
+          test: [/\.stories\.ts?$/],
+          include: [path.resolve(__dirname, '../src')],
+        },
+        loaderOptions: {
+          prettierConfig: { printWidth: 80, singleQuote: false },
+          injectStoryParameters: false,
+        },
+      },
+    },
     "storybook-addon-designs",
     {
       name: "@storybook/addon-postcss",
